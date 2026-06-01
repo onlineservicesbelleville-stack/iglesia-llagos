@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
+@theme {
+  --color-marian-50: #eff6ff;
+  --color-marian-100: #dbeafe;
+  --color-marian-200: #bfdbfe;
+  --color-marian-300: #93c5fd;
+  --color-marian-500: #1e4d8c;
+  --color-marian-600: #1a3a5c;
+  --color-marian-700: #142d47;
+  --color-marian-800: #0f2035;
+  --color-marian-900: #0a1525;
+
+  --color-golden-200: #fde68a;
+  --color-golden-300: #fcd34d;
+  --color-golden-400: #f0c040;
+  --color-golden-500: #d4af37;
+  --color-golden-600: #c9a227;
+  --color-golden-700: #a8851f;
+
+  --color-cream-50: #fdf8f0;
+  --color-cream-100: #fdf6e3;
+  --color-cream-200: #f9efd0;
+
+  --color-andean-400: #4a8f56;
+  --color-andean-500: #3a7d44;
+  --color-andean-600: #2d6b38;
+
+  --color-church-400: #a07850;
+  --color-church-500: #8b6340;
+  --color-church-600: #6b4c2a;
+  --color-church-700: #5a3e22;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fdf8f0;
+  --foreground: #1a2744;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+.animate-delay-200  { animation-delay: 0.2s; opacity: 0; }
+.animate-delay-400  { animation-delay: 0.4s; opacity: 0; }
+.animate-delay-600  { animation-delay: 0.6s; opacity: 0; }
+
+.gold-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  margin: 0 auto;
 }

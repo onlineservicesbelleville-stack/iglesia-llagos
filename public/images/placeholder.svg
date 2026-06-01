@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#1e4d8c"/>
+  <text x="600" y="400" font-family="serif" font-size="48" fill="#d4af37" text-anchor="middle" dominant-baseline="middle">
+    Iglesia Virgen del Carmen y San José de Llagos
+  </text>
+  <text x="600" y="470" font-family="serif" font-size="28" fill="#93c5fd" text-anchor="middle">
+    Agregar imagen aquí
+  </text>
+</svg>
