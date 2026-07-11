@@ -6,12 +6,12 @@ export default function NovenaSection() {
     <section id="novena" className="py-20 bg-white scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start mb-12">
-          <div className="relative h-[380px] rounded-3xl overflow-hidden shadow-2xl border-4 border-andean-400">
+          <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-andean-400 bg-gradient-to-br from-marian-50 to-marian-100">
             <Image
               src={novenaSection.image}
               alt={novenaSection.title}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
