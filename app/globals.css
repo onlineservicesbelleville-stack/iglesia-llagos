@@ -22,6 +22,8 @@
   --color-cream-100: #fdf6e3;
   --color-cream-200: #f9efd0;
 
+  --color-andean-50: #eef7ef;
+  --color-andean-100: #d9edd9;
   --color-andean-400: #4a8f56;
   --color-andean-500: #3a7d44;
   --color-andean-600: #2d6b38;
@@ -30,6 +32,14 @@
   --color-church-500: #8b6340;
   --color-church-600: #6b4c2a;
   --color-church-700: #5a3e22;
+
+  --color-lavender-50: #f5f2fb;
+  --color-lavender-100: #ebe4f7;
+  --color-lavender-200: #d9caef;
+  --color-lavender-400: #a98fd2;
+  --color-lavender-500: #8f6fc4;
+  --color-lavender-600: #7256a8;
+  --color-lavender-700: #5c458a;
 }
 
 :root {

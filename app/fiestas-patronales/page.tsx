@@ -1,99 +1,34 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import FiestasHero from "@/components/FiestasHero";
+import InvitationSection from "@/components/InvitationSection";
+import QueenMessageSection from "@/components/QueenMessageSection";
+import NovenaSection from "@/components/NovenaSection";
 import PatronalProgram from "@/components/PatronalProgram";
-import { patronalProgram, patronalDescription, patronalInvitation } from "@/data/programs";
+import FiestasGallery from "@/components/FiestasGallery";
+import WhatsAppShareButton from "@/components/WhatsAppShareButton";
+import BackToTopButton from "@/components/BackToTopButton";
+import { patronalProgram2026, closingNotes } from "@/data/programs";
 
 export const metadata: Metadata = {
-  title: "Fiestas Patronales",
+  title: "Fiestas Patronales Llagos 2026",
   description:
-    "Programa de las Fiestas Patronales de la Iglesia Virgen del Carmen y San José de Llagos. Celebración anual de fe, tradición y comunidad.",
+    "Programa oficial de las Fiestas Patronales Llagos 2026 en honor a la Santísima Virgen del Carmen y San José de Llagos. Del 15 al 19 de julio, por los LXXXI años de parroquialización.",
 };
 
 export default function FiestasPatronalesPage() {
   return (
     <>
-      {/* Header */}
-      <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/ft2.jpg"
-            alt="Iglesia de Llagos en las fiestas patronales"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-marian-900/85 via-marian-800/75 to-marian-700/85" />
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
-          <p className="text-golden-400 text-sm font-semibold tracking-widest uppercase mb-3">
-            ✝ Celebración anual ✝
-          </p>
-          <h1
-            className="text-4xl md:text-6xl font-bold mb-4"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
-            Fiestas Patronales
-          </h1>
-          <div className="gold-divider mb-6" />
-          <p className="text-blue-100 text-xl">
-            Celebramos con fe, alegría y tradición en honor a la Virgen del
-            Carmen y San José
-          </p>
-        </div>
-      </section>
+      <div id="top" />
+      <FiestasHero />
 
-      {/* Descripción */}
-      <section className="py-20 bg-cream-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center mb-16">
-            <div>
-              <p className="text-golden-600 text-sm font-semibold tracking-widest uppercase mb-3">
-                ✝ Tradición viva ✝
-              </p>
-              <h2
-                className="text-3xl font-bold text-marian-600 mb-6"
-                style={{ fontFamily: "Georgia, serif" }}
-              >
-                Una celebración que une generaciones
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-lg mb-6">
-                {patronalDescription}
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { icon: "🙏", label: "Novena y misas" },
-                  { icon: "🎶", label: "Música y cultura" },
-                  { icon: "🚶", label: "Procesiones" },
-                  { icon: "🤝", label: "Encuentro familiar" },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="bg-white rounded-xl p-4 flex items-center gap-3 shadow-sm border border-cream-200"
-                  >
-                    <span className="text-2xl">{item.icon}</span>
-                    <p className="text-marian-600 font-semibold text-sm">
-                      {item.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-golden-500">
-              <Image
-                src="/images/virgen.jpg"
-                alt="Virgen del Carmen de Llagos"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <InvitationSection />
 
-      {/* Programa */}
-      <section className="py-20 bg-white">
+      <QueenMessageSection />
+
+      <NovenaSection />
+
+      {/* Programa completo */}
+      <section id="programa" className="py-20 bg-cream-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-golden-600 text-sm font-semibold tracking-widest uppercase mb-3">
@@ -103,82 +38,86 @@ export default function FiestasPatronalesPage() {
               className="text-3xl md:text-4xl font-bold text-marian-600 mb-4"
               style={{ fontFamily: "Georgia, serif" }}
             >
-              Programa de Fiestas Patronales 2025
+              Programa de Fiestas Patronales 2026
             </h2>
             <div className="gold-divider mb-6" />
             <p className="text-gray-500 text-sm max-w-xl mx-auto">
-              * Este programa es referencial. Las actividades pueden ajustarse
-              según la organización del comité de fiestas.
+              Del 15 al 19 de julio de 2026 · Filtra las actividades por categoría
             </p>
           </div>
-          <PatronalProgram days={patronalProgram} />
+          <PatronalProgram days={patronalProgram2026} />
         </div>
       </section>
 
-      {/* Invitación */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/LLAGOS.jpg"
-            alt="Vista de Llagos"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-marian-900/90 to-marian-800/85" />
+      {/* Galería */}
+      <section id="galeria" className="py-20 bg-white scroll-mt-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-golden-600 text-sm font-semibold tracking-widest uppercase mb-3">
+              📸 Momentos de la fiesta ✝
+            </p>
+            <h2
+              className="text-3xl md:text-4xl font-bold text-marian-600 mb-4"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
+              Galería Fiestas Patronales 2026
+            </h2>
+            <div className="gold-divider" />
+          </div>
+          <FiestasGallery />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
-          <p className="text-golden-400 text-sm font-semibold tracking-widest uppercase mb-4">
-            ✝ Invitación a la comunidad ✝
-          </p>
-          <h2
-            className="text-3xl md:text-4xl font-bold mb-6"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
-            Todos están invitados
-          </h2>
-          <div className="gold-divider mb-8" />
-          <p className="text-blue-100 text-xl leading-relaxed mb-10">
-            {patronalInvitation}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contacto"
-              className="inline-flex items-center justify-center gap-2 bg-golden-500 hover:bg-golden-600 text-marian-900 font-bold px-8 py-4 rounded-full text-base transition-all hover:scale-105"
+      </section>
+
+      {/* Agradecimientos generales */}
+      <section className="py-16 bg-marian-700">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <p className="text-golden-400 text-sm font-semibold tracking-widest uppercase mb-3">
+              ✝ Con gratitud ✝
+            </p>
+            <h2
+              className="text-2xl md:text-3xl font-bold text-white"
+              style={{ fontFamily: "Georgia, serif" }}
             >
-              Contáctanos para más info
-            </Link>
-            <Link
-              href="/donaciones"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-marian-700 font-bold px-8 py-4 rounded-full text-base transition-all"
-            >
-              Apoyar las fiestas
-            </Link>
+              Agradecimientos generales
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {closingNotes.map((note) => (
+              <div
+                key={note.title}
+                className="bg-marian-800/60 border border-golden-500/30 rounded-2xl p-6"
+              >
+                <h3 className="text-golden-400 font-bold text-base mb-2">
+                  {note.title}
+                </h3>
+                <p className="text-blue-100 text-sm leading-relaxed">
+                  {note.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Galería previa */}
+      {/* Compartir */}
       <section className="py-16 bg-cream-50 text-center">
         <div className="max-w-2xl mx-auto px-4">
           <h3
             className="text-2xl font-bold text-marian-600 mb-4"
             style={{ fontFamily: "Georgia, serif" }}
           >
-            Revive las celebraciones anteriores
+            «Llagos vive sus fiestas»
           </h3>
           <p className="text-gray-600 mb-8">
-            Visita nuestra galería para ver imágenes de las fiestas patronales
-            de años anteriores.
+            Comparte esta página con tus familiares y amigos para que no se
+            pierdan las Fiestas Patronales Llagos 2026.
           </p>
-          <Link
-            href="/galeria"
-            className="inline-flex items-center gap-2 bg-marian-600 hover:bg-marian-700 text-white font-bold px-8 py-4 rounded-full text-base transition-all"
-          >
-            Ver galería →
-          </Link>
+          <WhatsAppShareButton text="¡Mira el programa completo de las Fiestas Patronales Llagos 2026 en honor a la Santísima Virgen del Carmen y San José de Llagos!" />
         </div>
       </section>
+
+      <BackToTopButton />
     </>
   );
 }
