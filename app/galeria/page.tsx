@@ -6,7 +6,7 @@ import { galleryImages } from "@/data/gallery";
 export const metadata: Metadata = {
   title: "Galería de Fotos",
   description:
-    "Galería de imágenes de la Iglesia Virgen del Carmen y San José de Llagos. Iglesia, Virgen del Carmen, fiestas patronales y paisajes de Llagos.",
+    "Galería de imágenes de la Iglesia San José de Llagos. Iglesia, Virgen del Carmen, fiestas patronales y paisajes de Llagos.",
 };
 
 export default function GaleriaPage() {

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Nuestra Historia",
   description:
-    "Conoce la historia de la Iglesia Virgen del Carmen y San José de Llagos, comunidad andina de fe y tradición en Chimborazo, Ecuador.",
+    "Conoce la historia de la Iglesia San José de Llagos, comunidad andina de fe y tradición en Chimborazo, Ecuador.",
 };
 
 const milestones = [

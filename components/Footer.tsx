@@ -26,9 +26,9 @@ export default function Footer() {
               <span className="text-golden-500 text-3xl">✝</span>
               <div>
                 <p className="font-bold text-lg leading-tight">
-                  Iglesia Virgen del Carmen
+                  Iglesia
                 </p>
-                <p className="text-golden-400 text-sm">y San José de Llagos</p>
+                <p className="text-golden-400 text-sm">San José de Llagos</p>
               </div>
             </div>
             <p className="text-blue-200 text-sm leading-relaxed">
@@ -74,7 +74,7 @@ export default function Footer() {
 
         <div className="border-t border-marian-700 mt-10 pt-6 text-center">
           <p className="text-blue-300 text-sm">
-            © {year} Iglesia Virgen del Carmen y San José de Llagos. Todos los
+            © {year} Iglesia San José de Llagos. Todos los
             derechos reservados.
           </p>
         </div>

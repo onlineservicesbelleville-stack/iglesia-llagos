@@ -64,7 +64,7 @@ export default function Home() {
             className="text-3xl md:text-4xl font-bold text-marian-600 mb-5"
             style={{ fontFamily: "Georgia, serif" }}
           >
-            Iglesia Virgen del Carmen y San José de Llagos
+            Iglesia San José de Llagos
           </h2>
           <div className="gold-divider mb-6" />
           <p className="text-gray-600 text-lg leading-relaxed">

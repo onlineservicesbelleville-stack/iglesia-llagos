@@ -29,9 +29,9 @@ export default function Header() {
             <span className="text-golden-500 text-2xl">✝</span>
             <div>
               <p className="text-white font-bold text-sm leading-tight">
-                Iglesia Virgen del Carmen
+                Iglesia
               </p>
-              <p className="text-golden-400 text-xs">y San José de Llagos</p>
+              <p className="text-golden-400 text-xs">San José de Llagos</p>
             </div>
           </Link>
 

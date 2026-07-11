@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Iglesia Virgen del Carmen y San José de Llagos",
+  name: "Iglesia San José de Llagos",
   shortName: "Iglesia de Llagos",
   description:
-    "Sitio oficial de la Iglesia Virgen del Carmen y San José de Llagos. Fe, tradición, fiestas patronales, horarios de misa, galería y comunidad católica de Llagos, Chimborazo, Ecuador.",
+    "Sitio oficial de la Iglesia San José de Llagos. Fe, tradición, fiestas patronales, horarios de misa, galería y comunidad católica de Llagos, Chimborazo, Ecuador.",
   keywords:
     "Iglesia Llagos, Virgen del Carmen Llagos, San José de Llagos, fiestas patronales Llagos, Chunchi, Chimborazo, Ecuador",
   location: "Llagos, Cantón Chunchi, Provincia de Chimborazo, Ecuador",
@@ -14,8 +14,8 @@ export const siteConfig = {
   },
   schedules: [
     {
-      day: "Domingos",
-      time: "10:00 a.m.",
+      day: "Domingo",
+      time: "14H00 (una vez al mes)",
       description: "Santa Misa Comunitaria",
     },
     {

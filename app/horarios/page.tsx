@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "Horarios de Misa",
   description:
-    "Horarios de misa y celebraciones en la Iglesia Virgen del Carmen y San José de Llagos, Chimborazo, Ecuador.",
+    "Horarios de misa y celebraciones en la Iglesia San José de Llagos, Chimborazo, Ecuador.",
 };
 
 export default function HorariosPage() {

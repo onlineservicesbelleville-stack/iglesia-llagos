@@ -5,7 +5,7 @@ import ContactSection from "@/components/ContactSection";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contacta a la Iglesia Virgen del Carmen y San José de Llagos, Chimborazo, Ecuador. Facebook, WhatsApp, correo electrónico y más.",
+    "Contacta a la Iglesia San José de Llagos, Chimborazo, Ecuador. Facebook, WhatsApp, correo electrónico y más.",
 };
 
 export default function ContactoPage() {

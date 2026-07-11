@@ -6,7 +6,7 @@ import { donationInfo } from "@/data/site";
 export const metadata: Metadata = {
   title: "Donaciones",
   description:
-    "Apoya a la Iglesia Virgen del Carmen y San José de Llagos con tu donación. Tu colaboración mantiene viva la misión espiritual de nuestra comunidad.",
+    "Apoya a la Iglesia San José de Llagos con tu donación. Tu colaboración mantiene viva la misión espiritual de nuestra comunidad.",
 };
 
 export default function DonacionesPage() {

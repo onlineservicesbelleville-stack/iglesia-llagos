@@ -6,7 +6,7 @@ import { newsItems } from "@/data/news";
 export const metadata: Metadata = {
   title: "Noticias",
   description:
-    "Noticias, comunicados y anuncios de la Iglesia Virgen del Carmen y San José de Llagos, Chimborazo, Ecuador.",
+    "Noticias, comunicados y anuncios de la Iglesia San José de Llagos, Chimborazo, Ecuador.",
 };
 
 export default function NoticiasPage() {
