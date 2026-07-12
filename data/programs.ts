@@ -111,7 +111,7 @@ export interface ProgramDay {
 // ---------------------------------------------------------------------------
 export const fiestasHero = {
   title: "Fiestas Patronales Llagos 2026",
-  subtitle: "En honor a la Santísima Virgen del Carmen y San José de Llagos",
+  subtitle: "En honor a la Santísima Virgen del Carmen",
   dates: "Del 15 al 19 de julio de 2026",
   anniversary: "LXXXI años de parroquialización",
   phrase: "«Llagos vive sus fiestas»",
